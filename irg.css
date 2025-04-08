@@ -1,0 +1,25 @@
+.impressum {
+  width: 60%;
+  margin: 0 auto; /* Vertikal: 0, Horizontal: automatisch zentriert */
+  margin-bottom: 20px;
+}
+
+.datenschutz {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.datenschutz li {
+  margin-left: 20px;
+}
+
+.cookies {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.cookies li {
+  margin-left: 20px;
+}
