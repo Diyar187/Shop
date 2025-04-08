@@ -1,0 +1,72 @@
+.contact {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Zwei Spalten: Bild (auto) und Restbreite (1fr) */
+  align-items: center;            /* Vertikal zentrieren */
+  height: 100vh;
+}
+
+.contact-img {
+  margin-left: 20px; /* Abstand links */
+  width: 40rem;
+  height: auto;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto; /* Zentriert den Inhalt horizontal */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#email {
+  width: 20rem;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.label-email {
+  margin-top: 20px;
+}
+
+#message {
+  width: 20rem;
+  height: 100px;
+  padding-top: 6px;
+  padding-left: 10px;
+}
+
+.label-message {
+  margin-top: 20px;
+}
+
+#email::placeholder,
+#message::placeholder {
+  color: #aaa; /* Optional: Farbe des Platzhalters */
+  font-size: 0.9rem; /* Optional: Schriftgröße */
+}
+
+.contact-btn {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .contact-img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
