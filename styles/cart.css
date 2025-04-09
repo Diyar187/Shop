@@ -1,0 +1,168 @@
+.cart-header {
+  position: relative;
+  margin-left: 40px;
+  margin-right: 120px;
+  margin-top: 40px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cart-header h1 {
+  font-size: 2em;
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.cart-header-p{
+  position: absolute;
+  right: 25px;
+  top: 35px;
+}
+
+.cart-header-line {
+  height: 2px; /* Höhe der Linie */
+  margin: 0 20px; /* Abstand links und rechts */
+  background-color: #ccc; /* Farbe der Linie */
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5); /* Schatten */
+}
+
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item-image {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.cart-item-image input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.cart-item-image .image-gallery {
+  display: flex;
+}
+
+.cart-item-image .image-gallery img {
+  width: 200px; /* Beispielbreite */
+  height: auto;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+  position: relative;
+}
+
+.product-title {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.seller,
+.shipping,
+.gift-options,
+.configuration {
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 3px;
+}
+
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.button-icon {
+  background: none;
+  border: none;
+  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #555; /* Beispiel-Icon-Farbe */
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.quantity-button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #333;
+}
+
+.quantity-input {
+  width: 30px;
+  text-align: center;
+  border: none;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 5px;
+  font-size: 1em;
+  -moz-appearance: textfield; /* Für Firefox */
+  -webkit-appearance: none; /* Für Chrome, Safari, Edge */
+  appearance: none; /* Standard */
+}
+
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Entfernt die Pfeile in Webkit-Browsern */
+  margin: 0; /* Entfernt zusätzlichen Platz */
+}
+
+.cart-item-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.button-text {
+  background: none;
+  border: none;
+  color: #333; /* Beispiel-Link-Farbe */
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 0.9em;
+}
+
+.cart-item-price {
+  text-align: right;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.unit-price {
+  color: #777;
+  font-size: 0.9em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
