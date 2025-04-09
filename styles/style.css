@@ -108,7 +108,8 @@ button:hover {
     text-decoration: underline;
 }
 
-.navbar-cart:hover {
+.cart:hover {
+    color: #A8DADC;
     cursor: pointer;
 }
 
