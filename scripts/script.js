@@ -19,6 +19,11 @@ nxtBtn.addEventListener('click', ()=> {
   }
 })
 
+window.addEventListener('resize', () => {
+  currentIndex = 0; // Setze den Index zurück
+  updateSlider(); // Aktualisiere den Slider
+});
+
 function updateSlider() {
   const offset = -currentIndex * 100; 
   slider.style.transform = `translateX(${offset}%)`;
