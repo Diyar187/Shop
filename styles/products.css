@@ -3,15 +3,39 @@
   padding: 0 120px;
 }
 
+.products-main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.products-filter-container {
+  align-self: flex-start;
+}
+
+.products-filter {
+  max-width: 20%;
+  align-self: flex-start;
+}
+
+.products-filter-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3m 1fr);
+  width: 60vw;
 }
 
 
 @media (max-width: 2000px) {
   .products-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
   }
 }

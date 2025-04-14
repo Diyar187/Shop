@@ -19,6 +19,12 @@ nxtBtn.addEventListener('click', ()=> {
   }
 })
 
+// Event-Listener für Fenstergröße ändern
+window.addEventListener('resize', () => {
+  currentIndex = 0;
+  updateSlider(); 
+});
+
 function updateSlider() {
   const offset = -currentIndex * 100; 
   slider.style.transform = `translateX(${offset}%)`;
