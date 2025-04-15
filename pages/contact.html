@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Allura&family=Nerko+One&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <script src="../scripts/component.js" defer></script> 
+  <script src="../scripts/contact.js" defer></script> 
 </head>
 
 <body>
@@ -27,17 +28,19 @@
     <div class="contact-div">
       <h1>Contact Us</h1>
       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p>
-      <form action="https://formspree.io/f/mldjvpyg" method="POST" class="contact-form">
+      <form id="contact-form" class="contact-form">
         <label for="email" class="label-email">Email:</label>
         <input type="email" id="email" name="email" placeholder="Your email" required>
         
         <label for="message" class="label-message">Message:</label>
         <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
         
-        <input type="hidden" name="_redirect" value="https://deine-website.de/danke.html">
-        
         <button class="contact-btn" type="submit">Send</button>
       </form>
+
+      <p id="form-response" style="display:none; color: green; margin-top: 1rem;">
+        ✔️ Thank you! Your message has been sent.
+      </p>
     </div>
   </section>
 </main>
@@ -46,3 +49,4 @@
 
 </body>
 </html>
+
