@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login</title>
-  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script src="../scripts/component.js" defer></script> 
 </head>
 <body>
-  <h1>Login</h1>
-  <form id="login-form" action="http://localhost:3000/login" method="POST">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    
-    <button type="submit">Login</button>
-  </form>
+  <div class="navbar-js navigation"></div>
+
+  <div class="pseudo-body">
+    <div class="auth-container">
+      <h1>Login</h1>
+      <form id="login-form" action="http://localhost:3000/login" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        
+        <button type="submit">Login</button>
+      </form>
+      <div class="switch-link">
+        Noch kein Account? <a href="register.html">Registrieren</a>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>

@@ -108,6 +108,30 @@ button:hover {
     text-decoration: underline;
 }
 
+.dropdown {
+  display: none;
+  background-color: whitesmoke;
+  text-align: center; /* Zentriert den Text */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  border-radius: 20px;
+  left: -34px;
+}
+.dropdown-wrapper:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  padding: 10px;
+}
+
+.dropdown li a {
+  text-decoration: none;
+}
+
+
 .cart:hover {
     color: #A8DADC;
     cursor: pointer;
