@@ -1,4 +1,4 @@
-import {cart} from './cart.js';
+import {cart, removeFromCart} from './cart.js';
 import {products} from './productData.js';
 
 let cartSummaryHtml = '';
@@ -14,7 +14,8 @@ if (product.id === productId) {
 }
 });
 cartSummaryHtml += `
-    <div class="cart-item">
+    <div class="cart-item 
+    js-cart-item-container-${matchingProduct.id}">
       <div class="cart-item-image">
         <input type="checkbox" id="item-1" name="item-1" checked>
         <div class="image-gallery">
@@ -36,7 +37,7 @@ cartSummaryHtml += `
             </span>
           </div>
           <div class="cart-item-buttons">
-            <button class="button-text">Löschen</button>
+            <button class="button-text js-delete-link" data-product-id=${matchingProduct.id}>Löschen</button>
             <button class="button-text">Auf die Merkliste</button>
             <button class="button-text">Teilen</button>
           </div>
@@ -50,3 +51,12 @@ cartSummaryHtml += `
 });
 
 document.querySelector('.js-order-summary').innerHTML = cartSummaryHtml;
+
+document.querySelectorAll('.js-delete-link').forEach((link) => {  
+  link.addEventListener('click', () => {
+    const productId = link.dataset.productId;
+    removeFromCart(productId);
+    const container = document.querySelector(`.js-cart-item-container-${productId}`);
+    container.remove();
+  });
+});
